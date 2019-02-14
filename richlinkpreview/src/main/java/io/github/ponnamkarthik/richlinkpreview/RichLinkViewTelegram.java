@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.text.Spannable;
 import android.text.style.URLSpan;
 import android.util.AttributeSet;
@@ -177,7 +176,7 @@ public class RichLinkViewTelegram extends RelativeLayout {
                 viewListener.onError(e);
             }
         });
-        richPreview.getPreview(url);
+        richPreview.getPreview(url, true);
     }
 
     private static void removeUnderlines(Spannable p_Text) {

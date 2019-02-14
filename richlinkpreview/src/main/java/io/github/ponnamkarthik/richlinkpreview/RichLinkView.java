@@ -6,7 +6,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -175,7 +174,7 @@ public class RichLinkView extends RelativeLayout {
                 viewListener.onError(e);
             }
         });
-        richPreview.getPreview(url);
+        richPreview.getPreview(url, true);
     }
 
 }

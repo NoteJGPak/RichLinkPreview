@@ -181,7 +181,7 @@ public class RichLinkViewSkype extends RelativeLayout {
                 viewListener.onError(e);
             }
         });
-        richPreview.getPreview(url);
+        richPreview.getPreview(url, true);
     }
 
 
